@@ -1,0 +1,42 @@
+# RAG-based AI Agent for Constitution of Pakistan
+# This file lists all the Python packages needed for this project
+# Updated versions for Python 3.14 compatibility (requires numpy 2.x)
+
+# LangChain - A framework for building applications with LLMs
+# It provides tools for document loading, text splitting, embeddings, and chains
+# Using newer version that supports numpy 2.x (required for Python 3.14)
+langchain>=0.3.0
+
+# OpenAI - Official Python library for OpenAI API
+# We'll use this to access GPT-4o-mini model and create embeddings
+openai>=1.12.0
+
+# FAISS - Facebook AI Similarity Search
+# A library for efficient similarity search and clustering of dense vectors
+# We use faiss-cpu (CPU version) which is sufficient for local development
+faiss-cpu>=1.13.1
+
+# PyPDF - A library to read PDF files
+# We need this to extract text from the constitution.pdf file
+pypdf>=4.0.1
+
+# Cryptography - Required for reading encrypted/password-protected PDFs
+# Some PDFs use encryption (AES algorithm) which requires this library
+cryptography>=3.1
+
+# python-dotenv - Loads environment variables from .env file
+# This helps us securely store API keys without hardcoding them
+python-dotenv>=1.0.0
+
+# LangChain OpenAI integration
+# Provides OpenAI-specific implementations for LangChain
+langchain-openai>=0.2.0
+
+# LangChain community tools
+# Contains community-maintained integrations and tools
+langchain-community>=0.3.0
+
+# Streamlit - Web framework for building the chat interface
+# Used to create the web application for the RAG agent
+streamlit>=1.28.0
+

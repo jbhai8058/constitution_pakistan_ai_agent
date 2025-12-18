@@ -1,0 +1,133 @@
+# Environment variables (contains sensitive API keys)
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Vector store (large binary files)
+# Uncomment the line below if you want to exclude vector_store from git
+# Note: For deployment, you may need to include this or build it on the server
+# vector_store/
+*.faiss
+*.pkl
+*.index
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE - Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE - Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# OS - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# OS - Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# OS - Linux
+*~
+.directory
+.Trash-*
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# CapRover
+captain-definition.backup
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Large files (optional - uncomment if needed)
+# *.pdf
+# *.zip
+# *.tar.gz
+
+# Backup files
+*.bak
+*.backup
+*~
+
