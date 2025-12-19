@@ -18,6 +18,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application files
 COPY . .
 
+# 🔥 RUN INGEST SCRIPT DURING BUILD
+RUN python ingest.py
+
 # Expose port 80 (CapRover expects port 80)
 EXPOSE 80
 
