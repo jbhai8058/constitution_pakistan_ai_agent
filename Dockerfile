@@ -4,6 +4,10 @@ FROM python:3.11-slim
 # Set working directory
 WORKDIR /app
 
+# Set ENV variable of carRover Server
+ARG OPENAI_API_KEY
+ENV OPENAI_API_KEY=$OPENAI_API_KEY
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
